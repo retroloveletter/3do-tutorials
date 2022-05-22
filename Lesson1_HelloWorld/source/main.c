@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 		gcon.gc_PenX = 10;
 		gcon.gc_PenY = 10;
-		DrawText8(&gcon, sc->sc_BitmapItems[sc->sc_CurrentScreen], "Hello World");
+		DrawText8(&gcon, sc->sc_BitmapItems[sc->sc_CurrentScreen], (uint8*)"Hello, World!");
 
 		DisplayScreen(sc->sc_ScreenItems[sc->sc_CurrentScreen], 0);
 
